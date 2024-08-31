@@ -6,8 +6,6 @@ This project is designed to collect and analyze job postings from the German pub
 
 ### Project Structure
 
-The project is organized into several modules:
-
 ```
 interamt-job-scraper/
 │
@@ -35,6 +33,7 @@ interamt-job-scraper/
 └── requirements.txt
 ```
 
+The project is organized into several modules:
 - **`core/url_crawler.py`**: Handles the initial crawling of URLs from partner institutions on Interamt. It creates a base list of job listings by iterating through all partner IDs.
 - **`filter/filter_processor.py`**: Applies filters to the base list based on a predefined list of "Oberste Bundesbehörden" (highest federal authorities) to refine the data.
 - **`scraper/data_scraper.py`**: Scrapes detailed job postings from the filtered data, extracting relevant information from specific partner pages.
