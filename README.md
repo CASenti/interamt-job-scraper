@@ -1,7 +1,3 @@
-Certainly! Here's a complete description for your GitHub project that includes all the details you've provided, including project setup, usage instructions, and additional context:
-
----
-
 # Job Data Scraper for Public Sector
 
 ## Overview
@@ -12,11 +8,40 @@ This project is designed to collect and analyze job postings from the German pub
 
 The project is organized into several modules:
 
+```
+interamt-job-scraper/
+│
+├── core/
+│   ├── __init__.py
+│   ├── url_crawler.py
+│   ├── data_handler.py
+│   └── config.py
+│
+├── filter/
+│   ├── __init__.py
+│   ├── filter_processor.py
+│
+├── scraper/
+│   ├── __init__.py
+│   ├── data_scraper.py
+│   └── result_saver.py
+│
+├── utils/
+│   ├── __init__.py
+│   ├── json_utils.py
+│   └── xlsx_utils.py
+│
+├── main.py
+└── requirements.txt
+```
+
 - **`core/url_crawler.py`**: Handles the initial crawling of URLs from partner institutions on Interamt. It creates a base list of job listings by iterating through all partner IDs.
 - **`filter/filter_processor.py`**: Applies filters to the base list based on a predefined list of "Oberste Bundesbehörden" (highest federal authorities) to refine the data.
 - **`scraper/data_scraper.py`**: Scrapes detailed job postings from the filtered data, extracting relevant information from specific partner pages.
 - **`scraper/result_saver.py`**: Saves the scraped results in JSON and XLSX formats.
 - **`utils/json_utils.py`** and **`utils/xlsx_utils.py`**: Provide utility functions for handling JSON and XLSX files.
+
+---
 
 ### Setup
 
@@ -38,6 +63,8 @@ The project is organized into several modules:
 3. **Update Configuration**
 
    Modify the `config.py` file in the `core` directory to set any required configuration options such as base URLs or API keys.
+
+---
 
 ### Usage
 
@@ -71,6 +98,8 @@ The project is organized into several modules:
 
    The scraper will save the results in both JSON and XLSX formats.
 
+---
+
 ### Example
 
 - **Initial Crawl**: 
@@ -88,6 +117,8 @@ The project is organized into several modules:
 
   For each filtered URL, the scraper extracts job postings and saves them in a structured format.
 
+---
+
 ### Files
 
 - **`config.py`**: Configuration settings.
@@ -96,14 +127,14 @@ The project is organized into several modules:
 - **`scraped_results.json`**: Output from the data scraper.
 - **`scraped_results.xlsx`**: Excel file containing scraped job postings.
 
+---
+
 ### Contribution
 
 Feel free to contribute to the project by submitting issues or pull requests. If you have suggestions for improvements or need help, please open an issue on the [GitHub repository](https://github.com/yourusername/job-data-scraper/issues).
 
+---
+
 ### License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0) - see the [LICENSE](LICENSE) file for details.
-
----
-
-This description should give users a comprehensive overview of your project, including its purpose, how to set it up, and how to use it. If you have any additional details or specific instructions, you can modify or expand this description as needed.
