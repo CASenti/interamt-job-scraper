@@ -1,0 +1,35 @@
+The `requirements.txt` file lists the Python packages and dependencies needed to run your project. For the project you've described, which involves web scraping, handling JSON and Excel files, and possibly logging, the `requirements.txt` file might include the following dependencies:
+
+```plaintext
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.0.3
+openpyxl==3.1.2
+```
+
+### Explanation of Each Dependency
+
+1. **`requests==2.31.0`**:
+   - **Purpose**: Handles HTTP requests, making it easy to send requests to web pages and interact with web APIs.
+   - **Usage**: Used in the `core/crawler.py` and `scraper/scraper.py` modules for fetching web pages.
+
+2. **`beautifulsoup4==4.12.2`**:
+   - **Purpose**: A library for parsing HTML and XML documents, allowing you to navigate, search, and modify the parse tree.
+   - **Usage**: Used in `core/crawler.py` and `scraper/scraper.py` to extract data from the HTML content of web pages.
+
+3. **`pandas==2.0.3`**:
+   - **Purpose**: A powerful data manipulation and analysis library. It provides data structures like DataFrames and tools for working with structured data.
+   - **Usage**: Utilized in `utils/xlsx_manager.py` to manage Excel file operations, such as reading from and writing to Excel files.
+
+4. **`openpyxl==3.1.2`**:
+   - **Purpose**: A library for reading and writing Excel files with the `.xlsx` format.
+   - **Usage**: Used by `pandas` for handling Excel file operations in `utils/xlsx_manager.py`.
+
+### How to Generate the `requirements.txt`
+If you’ve installed these packages in your development environment, you can generate a `requirements.txt` file by running the following command in the terminal:
+
+```bash
+pip freeze > requirements.txt
+```
+
+This command will capture the exact versions of all installed packages in your environment, ensuring that the project can be replicated with the same dependencies in other environments.
