@@ -149,7 +149,7 @@ To get started with this project:
 
 ### Contribution
 
-Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes. Feel free to contribute to the project by submitting issues or pull requests. If you have suggestions for improvements or need help, please open an issue on the [GitHub repository](https://github.com/yourusername/job-data-scraper/issues).
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes. Feel free to contribute to the project by submitting issues or pull requests. If you have suggestions for improvements or need help, please open an issue on the [GitHub repository](https://github.com/yourusername/interamt-job-scraper/issues).
 
 ---
 
